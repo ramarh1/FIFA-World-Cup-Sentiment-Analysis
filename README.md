@@ -42,7 +42,7 @@ Word cloud of all tweets[^1]
 ### Data Preprocessing 
 - A breakdown of what was done to the dataset to prepare the machine learning models
 
-Preprocessing Steps 
+#### Preprocessing Steps 
 1. Extracted urls, usernames, and hashtags
 2. Remove all extracted information and stop words to reduce word repetition and reduce document sizes
 3. Create TFIDF
