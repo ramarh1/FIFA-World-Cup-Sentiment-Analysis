@@ -49,6 +49,22 @@ Word cloud of all tweets[^1]
 3. Create TFIDF
 4. Conduct our own sentiment labels, using Vader
 
+```python
+# Combine all above to one function to fix texts
+def fix_Text(text):
+	letters = re.sub("[^a-zA-Z]https?:\/\/\S*", " ", str(text)
+	                 )  # remove all non-letters and urls
+	letters_1 = re.sub("#[A-Za-z0-9_]+", "", str(letters))  # remove all hashtags
+	letters_2 = re.sub("@[A-Za-z0-9_]+", "", str(letters_1)
+	                   )  # remove all mentions
+	letters_3 = re.sub(r'[^\x00-\x7F]+', ' ', str(letters_2))
+
+	words = letters_3.lower().split()  # make all letters lowercase
+	meaningful = [snow.stem(word)
+               for word in words if word not in all_stop_words]  # convert to stemmed words
+	return (" ".join(meaningful))
+```
+
 
 ### Model Performance
  
