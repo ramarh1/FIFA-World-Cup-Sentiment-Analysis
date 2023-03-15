@@ -9,8 +9,9 @@ Ramar Huntley,
 Xinmeng Wang,
 Adeniyi Samson
 
-### Data Overview
+### Data Overview and Purpose
  - The dataset was created using the Snscrape and the cardiffnlp/twitter-roberta-base-sentiment-latest model in Hugging Face Hub.The dataset includes tweets in English containing the hashtag #WorldCup2022. - Source: Kaggle
+ - The purpose of this research is to study which machine learning model would perform better at predicting sentiment analysis of tweets related to the FIFA World Cup on Twitter.
 
 ### Pipeline Overview
 1. Descriptive Analysis: In this step, we’re going to introduce our dataset and break down the data by extracted information.
@@ -51,7 +52,7 @@ Word cloud of all tweets[^1]
 
 ### Model Performance
  
- | Metrics        | Logicstic Regression| Naive Bayes| Random Forest | Transformer Base
+ | Metrics        | Logistic Regression| Naive Bayes| Random Forest | Transformer Base
 | ------------- |:---------------------:| :-----:|:-------------------:|:----------------:
 | Model Accuracy     | 79%         | 71% | 68% | 81%
 | Precision (neg,neu,pos)      | 77%, 79%, 80%              |   63%, 72%, 72% |71%, 64%, 71% | 83%, 72%, 90%
