@@ -75,11 +75,14 @@ def fix_Text(text):
 | Recall (neg,neu,pos) | 59%, 84%, 84%             |    78%, 54%, 79% | 64%, 66%, 73% | 85%, 83%, 75%
 
 
-### Insights
+### Insights/Limitations
 1. The models have the most disagreements in labeling neutral sentiments
 2. Transformer Base model seems to have the highest accuracy scores
 3. Random forest seems to have the hardest time to predict accurate sentiments
 4. Logistic regression using the vader module sentiment labels has a better performance
 5. There are a lot of spams and bot generated content that got mixed into the tweets - diluting the content
+6. There were unbalanced classes, which could have produced bias when performing the machine learning testing and training.
+
+
 
 [^1]: We’re not able to increase the resolution of the word cloud pictures
